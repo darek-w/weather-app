@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+    {{> head}}
+
+    <body>
+        <div class="main-content">
+            {{> header }}
+
+            <p>Weather site</p>
+
+            <form>
+                <input type="text" name="address" placeholder="Location"><br />
+                <button type="submit">Submit</button>
+            </form>
+
+            <p id="message-1"></p>
+            <p id="message-2"></p>
+        </div>
+        {{> footer }}
+    </body>
+    <script src="/js/app.js"></script>
+</html>
