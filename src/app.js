@@ -43,6 +43,7 @@ app.get('/help', (req, res) => {
 })
 
 app.get('/dummy', (req, res) => {
+    res.header("Access-Control-Allow-Origin", "*")
     res.send({
         label: 'test',
         location: 'test',
