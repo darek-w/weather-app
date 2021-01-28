@@ -29,7 +29,7 @@ app.all('/*', function(req, res, next) {
     res.header("Access-Control-Allow-Headers", "X-Requested-With");
     next();
   });
-  
+
 app.get('', (req, res) => {
     res.render('index', {
         title: 'Weather App',
@@ -53,12 +53,12 @@ app.get('/help', (req, res) => {
 })
 
 app.get('/dummy', (req, res) => {
-    res.header("Access-Control-Allow-Origin", "*")
     res.send({
-        label: 'test',
-        location: 'test',
-        area: 'text',
-        price: 10000,
+        title: 'Tereny inwestycyjne w pobliżu wipasz s.a., dr. gerard 3.3 ha...',
+        label: 'Dzierżawa',
+        location: 'mazowieckie, Warszawa',
+        area: 100000,
+        price: 80000,
         image: 'images/image.png'
     })
 })
