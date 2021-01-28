@@ -42,6 +42,16 @@ app.get('/help', (req, res) => {
     })
 })
 
+app.get('/dummy', (req, res) => {
+    res.send({
+        label: 'test',
+        location: 'test',
+        area: 'text',
+        price: 10000,
+        image: 'images/image.png'
+    })
+})
+
 app.get('/weather', (req, res) => {
     const address = req.query.address
 
