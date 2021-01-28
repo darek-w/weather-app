@@ -59,7 +59,7 @@ app.get('/dummy', (req, res) => {
         location: 'mazowieckie, Warszawa',
         area: 100000,
         price: 80000,
-        image: 'https://www.terenyinwestycyjne.info/cache/500-500/bfe41a533e4ae75fe529cc4ccb6c5a63/panattoni-annopol.jpg'
+        image: 'http://domainfordev.org/tereny-banner/images/image.png'
     })
 })
 
