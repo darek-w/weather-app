@@ -23,6 +23,7 @@ app.use(express.static(publicStaticDir))
 
 // Allow cors
 app.use(cors());
+app.options('*', cors());
 
 app.get('', (req, res) => {
     res.render('index', {
