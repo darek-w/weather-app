@@ -24,7 +24,12 @@ app.use(express.static(publicStaticDir))
 // Allow cors
 app.use(cors());
 app.options('*', cors());
-
+app.all('/*', function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "X-Requested-With");
+    next();
+  });
+  
 app.get('', (req, res) => {
     res.render('index', {
         title: 'Weather App',
