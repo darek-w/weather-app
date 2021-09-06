@@ -52,17 +52,6 @@ app.get('/help', (req, res) => {
     })
 })
 
-app.get('/dummy', (req, res) => {
-    res.send({
-        title: 'Tereny inwestycyjne w pobliżu wipasz s.a., dr. gerard 3.3 ha...',
-        label: 'Dzierżawa',
-        location: 'mazowieckie, Warszawa',
-        area: 100000,
-        price: 80000,
-        image: 'http://domainfordev.org/tereny-banner/images/image.png'
-    })
-})
-
 app.get('/weather', (req, res) => {
     const address = req.query.address
 
